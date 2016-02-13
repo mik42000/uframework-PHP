@@ -1,0 +1,31 @@
+Pour lancer le projet:
+-Se mettre à la racine du projet
+-$ php -S localhost:8080 -t web/
+-Dans le navigateur, saisir: localhost:8080/tweets pour attérir sur la page d'accueil (voir tous les tweets)
+-Naviguez ensuite sur le site. ENJOY IT !
+
+Pour créer la base de données:
+-$ docker run -d \
+    --volume /var/lib/mysql \
+    --name data_mysql \
+    --entrypoint /bin/echo \
+    busybox \
+    "mysql data-only container"
+-$ docker run -d -p 3306 \
+    --name mysql \
+    --volumes-from data_mysql \
+    -e MYSQL_USER=uframework \
+    -e MYSQL_PASS=p4ssw0rd \
+    -e ON_CREATE_DB=uframework \
+    tutum/mysql
+
+Pour créer les tables:
+-Se placer à la racine du projet
+-$ mysql uframework -h127.0.0.1 -P<port> -uuframework -pp4ssw0rd < app/config/schema.sql
+
+Pour accéder à la base:
+-$ mysql uframework -h127.0.0.1 -P<assigned port> -uuframework -p
+
+Pour lancer les tests:
+-Se placer à la racine du projet
+-$ phpunit

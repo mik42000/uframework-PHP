@@ -1,0 +1,9 @@
+{
+    "require": {
+        "willdurand/negotiation": "^2.0",
+        "fabpot/goutte": "^3.1"
+    },
+    "autoload": {
+        "psr-4": { "": [ "src/" ] }
+    }
+}

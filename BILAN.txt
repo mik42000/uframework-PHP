@@ -1,0 +1,3 @@
+Nous avons essayé de réaliser les tests unitaires mais nous n'avons pas réussi à tester les requêtes SQL. Nous avons donc quelques failures lors des tests.
+
+Aussi, concernant la négociation de contenu, il y a un problème lorsqu'on s'attend à recevoir du JSON.

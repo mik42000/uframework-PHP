@@ -1,0 +1,55 @@
+body {
+	width: 980px;
+	margin: auto;
+}
+
+* {
+	list-style-type: none;
+}
+
+h1 {
+	text-align: center;
+	/*color: #1da1f2;*/
+	color: #fff;
+	background: url('header.png');
+	background-size: cover;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
+
+.itemTweet{
+	border: 1px solid grey;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+.itemTweet:hover{
+	background: rgba(220, 226, 225, 0.5);
+}
+
+.itemTweet:visited, a:visited{
+	color: black;
+}
+
+#content{
+	margin-top: 85px;
+}
+
+#boutonAjouter{
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #1da1f2;
+	color: #fff;
+	font-weight: bold;
+}

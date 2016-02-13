@@ -1,0 +1,15 @@
+<?php $mapCache = array (
+  'TestCase' => '/tests/TestCase.php',
+  'App' => '/src/App.php',
+  'View\\TemplateEngineInterface' => '/src/View/TemplateEngineInterface.php',
+  'Exception\\ExceptionHandler' => '/src/Exception/ExceptionHandler.php',
+  'Exception\\HttpException' => '/src/Exception/HttpException.php',
+  'Routing\\Route' => '/src/Routing/Route.php',
+  'View\\TemplateEngine' => '/src/View/TemplateEngine.php',
+  'Model\\InMemoryFinder' => '/src/Model/InMemoryFinder.php',
+  'Model\\FinderInterface' => '/src/Model/FinderInterface.php',
+  'JsonFinder' => '/src/Model/JsonFinder.php',
+  'FinderInterface' => '/src/Model/FinderInterface.php',
+  'Model\\JsonFinder' => '/src/Model/JsonFinder.php',
+  'Http\\Request' => '/src/Http/Request.php',
+);
